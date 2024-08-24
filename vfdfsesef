@@ -1,0 +1,262 @@
+[33mcommit 72e441f19aa5d532ed008dfee62a215e96b302fc[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mMain-Production-Branch[m[33m, [m[1;31morigin/Main-Production-Branch[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Sat Aug 24 00:23:35 2024 +0530
+
+    h
+
+[33mcommit 917f777501233612e577e44dd963e8a34ccf67af[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Mon Aug 19 13:43:36 2024 +0530
+
+    small fixes
+
+[33mcommit 74efcaac9d1c611471494b66aa46db0d1ea40cdd[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Mon Aug 19 13:11:56 2024 +0530
+
+    fix
+
+[33mcommit da4df73ea6ec7251f49292e8c0ee5a49744f54e6[m
+Merge: 7fa0861 b021754
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Mon Aug 19 12:53:51 2024 +0530
+
+    Merge branch 'Main-Production-Branch' of https://github.com/Lakshh-187/minds into Main-Production-Branch
+
+[33mcommit 7fa0861874a0b4c300898d0088b1af74623cddfc[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Mon Aug 19 12:53:34 2024 +0530
+
+    fix
+
+[33mcommit b021754088b5dd497e1c58e1ed576f7c1159742f[m
+Author: Abhiram2144 <abhiram.sathiraju@gmail.com>
+Date:   Sun Aug 18 19:54:16 2024 +0530
+
+    added licensed donator text in premium resources
+
+[33mcommit 1f6e24c944fd7d2399143301f3e7b27469fa66ba[m
+Author: Abhiram2144 <abhiram.sathiraju@gmail.com>
+Date:   Sun Aug 18 18:32:57 2024 +0530
+
+    software products out of stock update
+
+[33mcommit d7d8ad0ce3444ad668fb2b92d69018fd6b5b46a6[m
+Merge: 81eed98 e646cf3
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Wed Aug 14 14:18:06 2024 +0530
+
+    removed static premium resources dependency
+    
+    removed static premium resources dependency
+
+[33mcommit e646cf35a92eaf0bd431e8f47079d44dfe70508e[m[33m ([m[1;31morigin/RonitSharma[m[33m)[m
+Merge: 6c135b2 81eed98
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Wed Aug 14 14:17:50 2024 +0530
+
+    Merge branch 'Main-Production-Branch' into RonitSharma
+
+[33mcommit 6c135b2f2ddbe0d0afb24850bf604361cd10bdaa[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Wed Aug 14 14:14:42 2024 +0530
+
+    removed static premium resources dependency
+
+[33mcommit 81eed98d6528baab6b641912cf9fab064a7ef598[m
+Author: Abhiram2144 <abhiram.sathiraju@gmail.com>
+Date:   Sun Aug 11 21:09:02 2024 +0530
+
+    new data added to premium resources
+
+[33mcommit e9630dff76a156db4e813d202486107d6eb145ee[m
+Author: Abhiram2144 <abhiram.sathiraju@gmail.com>
+Date:   Sat Aug 10 23:48:14 2024 +0530
+
+    links fixed
+
+[33mcommit cf321f5605697889b4da36d7a72672a64f591a21[m
+Merge: b1f90ca 2e92ccf
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Fri Aug 9 20:01:36 2024 +0530
+
+    Merge pull request #40 from Lakshh-187/RonitSharma
+    
+    prod errors corrected
+
+[33mcommit 2e92ccf3ec2b4eca7b35f7dc2c8c767262ba37cd[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Fri Aug 9 20:00:37 2024 +0530
+
+    prod errors corrected
+
+[33mcommit b1f90cac0cef52b9c741606b01f76eaaaeffc005[m
+Merge: 4ef4578 a511a11
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Fri Aug 9 02:00:52 2024 +0530
+
+    Merge pull request #39 from Lakshh-187/RonitSharma
+    
+    some minor changes
+
+[33mcommit a511a11d8e4d4489db6b7a201a72b4387239fd09[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Fri Aug 9 02:00:12 2024 +0530
+
+    some minor changes
+
+[33mcommit 4ef45781a50f143be41c19546cd928fa77f7bd4a[m
+Merge: df2d282 f239dde
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Fri Aug 9 00:13:54 2024 +0530
+
+    prod error fixed
+    
+    prod error fixed
+
+[33mcommit f239dde1fb71f165d48f73082f0875b48b0a70b8[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Fri Aug 9 00:12:51 2024 +0530
+
+    prod error fixed
+
+[33mcommit df2d282bee91d6cde4144f8a1078c71679ea7a4e[m
+Merge: 3d30fe6 9ad52e0
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Thu Aug 8 23:50:53 2024 +0530
+
+    prod ready
+    
+    Prod ready for testing
+
+[33mcommit 9ad52e015cc4abebdac241535bd86c900aacaba3[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Thu Aug 8 23:49:47 2024 +0530
+
+    prod ready almost
+
+[33mcommit 1ddc9d684e3d8bceafb679f9897baf9ce11f6135[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Thu Aug 8 23:04:33 2024 +0530
+
+    prod ready almost
+
+[33mcommit 3d30fe656ac8d6e57e4650a2317acc5f19b0166c[m
+Merge: 0742b63 1b3158a
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Thu Aug 8 02:08:05 2024 +0530
+
+    almost everything done except download links setup
+    
+    almost everything done except download links setup
+
+[33mcommit 1b3158a7e35a000276e699c9fb63187fc3b9c1ea[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Thu Aug 8 02:07:28 2024 +0530
+
+    almost everything done except download links setup
+
+[33mcommit 0742b633d9f847e77ff4c3515f26603ea09e5643[m
+Merge: a51ba8c e4be41b
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Thu Aug 8 00:40:04 2024 +0530
+
+    cart checkout completed plus added loader for fetch delays
+    
+    cart checkout completed plus added loader for fetch delays
+
+[33mcommit e4be41b8091421ee47b3045ea0e5aa33b1abde24[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Thu Aug 8 00:38:51 2024 +0530
+
+    cart checkout completed plus added loader for fetch delays
+
+[33mcommit a51ba8cbab2be3fc5ba002d962c227d595cbd49f[m
+Merge: 8891313 6348aa5
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Wed Aug 7 21:43:19 2024 +0530
+
+    Merge pull request #33 from Lakshh-187/RonitSharma
+    
+    plantation router buy now functionality setup
+
+[33mcommit 6348aa58b0a2f7ec221fe65de1c292412a172b29[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Wed Aug 7 21:30:38 2024 +0530
+
+    plantation router buy now functionality setup
+
+[33mcommit 8891313537ae7fbed4f0963811c71659b8fc1373[m
+Merge: abd1761 2170db2
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Wed Aug 7 17:21:02 2024 +0530
+
+    Merge pull request #32 from Lakshh-187/RonitSharma
+    
+    Membership payment system working
+
+[33mcommit 2170db271bc5eaab48b4767c972d3048d6219cc1[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Wed Aug 7 16:02:16 2024 +0530
+
+    membership payment system done
+
+[33mcommit 8866b92ff8766e60c33c5c01132c097ac18a4dd2[m
+Author: Jayanth <jayanth.sms.in@gmail.com>
+Date:   Wed Aug 7 02:07:22 2024 +0530
+
+    fixed bug
+
+[33mcommit 873569735cb53886c72dc9310b83c71d9199ed28[m
+Merge: 7867bc0 02c7ab8
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Wed Aug 7 01:38:29 2024 +0530
+
+    Merge pull request #31 from ronit044/Main-Production-Branch
+    
+    razorpay undergoing
+
+[33mcommit 02c7ab8fcef91c2caff288848337fa22f918e516[m
+Author: Ronit Sharma <ronitsharma3870@gmail.com>
+Date:   Wed Aug 7 01:36:35 2024 +0530
+
+    razorpay undergoing
+
+[33mcommit abd1761ba592376f05e97aca2e8854092f0c4c9e[m
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Tue Aug 6 22:07:50 2024 +0530
+
+    Update navbar.tsx
+
+[33mcommit bd4d380afb6e84decd4951bf05e1e1d3baf4dd2e[m
+Merge: 8d45ec6 f319ad8
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Tue Aug 6 20:18:29 2024 +0530
+
+    Merge pull request #30 from ronit044/master
+    
+    Signup and login repaired
+
+[33mcommit f319ad8c221ade1a8d22ccf468fe60bc3fde4969[m
+Merge: 1c917d7 8d45ec6
+Author: Ronit_sharma004 <118843577+ronit044@users.noreply.github.com>
+Date:   Tue Aug 6 20:18:03 2024 +0530
+
+    Merge branch 'master' into master
+
+[33mcommit 8d45ec6d21afec1e1f7b5464b054cfcf7e6f9c6c[m
+Author: Lakshh-187 <124417661+Lakshh-187@users.noreply.github.com>
+Date:   Tue Aug 6 17:35:49 2024 +0530
+
+    Create nextjs.yml
+
+[33mcommit 7867bc078faa38410363eb57ae3025a108f4d966[m
+Merge: e08e4cb 1c917d7
+Author: Lakshh-187 <124417661+Lakshh-187@users.noreply.github.com>
+Date:   Tue Aug 6 17:15:26 2024 +0530
+
+    Merge pull request #29 from ronit044/master
+    
+    Login and signup repaired
+
+[33mcommit 1c917d7

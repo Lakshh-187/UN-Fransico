@@ -1,0 +1,12 @@
+import React from 'react';
+import OTP from '../components/Auth/otp';
+
+function Verification() {
+  return (
+    <div className="flex items-center justify-center">
+      <OTP />
+    </div>
+  );
+}
+
+export default Verification;

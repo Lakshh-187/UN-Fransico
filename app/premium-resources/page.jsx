@@ -13,6 +13,7 @@ import Cart from '../../components/Plantation/Cart'
 import { useSelector } from 'react-redux'
 import { fetchCollection } from '@/services/firestore'
 import Loading from '@/components/loader/loader'
+import Link from 'next/link'
 function Page() {
   const isMember = useSelector((state) => state.user.userData.isMember);
   const [category, setCategory] = useState('Software')
@@ -150,7 +151,9 @@ function Page() {
         <div className='md:w-5/6 lg:w-3/5 mx-auto bg-black/50 backdrop-opacity-80 rounded-2xl flex flex-col text-white items-center gap-4 text-center p-5'>
           <h1 className='text-lg md:text-2xl'>We believe everyone deserves a plant</h1>
           <p className='text-xs md:text-base'>Regardless of your plant expertise, we can provide you with information, connections, inspiration as you pursue your interest in gardening.</p>
-          <button className='border text-xs md:text-base border-white w-max px-6 md:px-10 py-2 rounded-full'>Sign Up --{'>'}</button>
+          <Link href={'/Donate-premium'}>
+          <button className='border text-xs md:text-base border-white w-max px-6 md:px-10 py-2 rounded-full'>Donate Premium --{'>'}</button>
+          </Link>
         </div>
       </div>
     </>

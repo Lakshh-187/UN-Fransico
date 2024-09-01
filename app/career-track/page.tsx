@@ -210,7 +210,7 @@ const Card: React.FC<CardProps> = ({
       : track;
 
   return (
-    <div className="flex flex-col gap-3 shadow-lg py-3 w-1/2">
+    <div className="flex flex-col gap-3 shadow-lg py-3 w-full md:w-1/2">
       <div className="flex items-center justify-evenly bg-yellow-400 rounded-md py-2">
         <img src="/uniwave-resources/learningpath.svg" alt="Learning Path" />
         <h3 className="text-2xl font-semibold font-mono">{title}</h3>

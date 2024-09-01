@@ -147,11 +147,11 @@ const Comp = () => {
         </div>
         <div className="flex md:flex-row flex-col w-full">
           <div className="flex flex-col gap-5">
-            <div className="flex items-center justify-center gap-2 mt-8 md:px-10 px-4">
+            <div className="flex items-center justify-center flex-wrap gap-2 mt-8 md:px-10 px-4">
               {categories.map((category, i) => (
                 <div
                   key={i}
-                  className={`bg-white shadow-md px-4 py-1 rounded-full cursor-pointer flex items-center justify-center w-28 ${
+                  className={`bg-white shadow-md px-4 py-1 rounded-full cursor-pointer flex items-center justify-center flex-wrap w-28 ${
                     checkedItems[category.toLowerCase()]
                       ? "bg-yellow-200"
                       : "bg-white"
@@ -181,23 +181,59 @@ const Comp = () => {
   );
 };
 
+// const Card: React.FC<{ data: Schema }> = ({ data }) => (
+//   <Link href={data.Link ?? "/"}>
+//     <div className="shadow-lg block w-full h-48 bg-white rounded-md cursor-pointer">
+//       <div className="py-5 px-3 flex flex-col gap-3 relative h-full">
+//         <div className="flex items-center justify-start gap-2">
+//           <p className="px-3 py-1 rounded-full w-fit bg-gray-200 text-gray-500 font-semibold">
+//             {data.Category}
+//           </p>
+//           <p className="px-3 py-1 rounded-full w-fit bg-gray-200 text-gray-500 font-semibold">
+//             {data.Topic}
+//           </p>
+//         </div>
+//         <h3 className="font-semibold">{data.Title}</h3>
+//         <button className="absolute bottom-3 px-3 py-1 rounded-full w-fit bg-blue-200 text-gray-500 font-semibold">
+//           Explore
+//         </button>
+//       </div>
+//     </div>
+//   </Link>
+// );
+
 const Card: React.FC<{ data: Schema }> = ({ data }) => (
-  <Link href={data.Link ?? "/"}>
-    <div className="shadow-lg block w-full h-48 bg-white rounded-md cursor-pointer">
-      <div className="py-5 px-3 flex flex-col gap-3 relative h-full">
-        <div className="flex items-center justify-start gap-2">
-          <p className="px-3 py-1 rounded-full w-fit bg-gray-200 text-gray-500 font-semibold">
-            {data.Category}
-          </p>
-          <p className="px-3 py-1 rounded-full w-fit bg-gray-200 text-gray-500 font-semibold">
-            {data.Topic}
-          </p>
-        </div>
-        <h3 className="font-semibold">{data.Title}</h3>
-        <button className="absolute bottom-3 px-3 py-1 rounded-full w-fit bg-blue-200 text-gray-500 font-semibold">
-          Explore
-        </button>
+  <Link href={data['Link'] ?? "/"}>
+    <div
+      className="bg-white border-2 shadow-lg rounded-lg p-7 transition-transform duration-300 hover:shadow-xl hover:scale-105 relative"
+      style={{
+        borderColor: 'hsl(210, 70%, 60%)', // Updated color scheme
+      }}
+    >
+      {/* Featured Badge */}
+      <div className="absolute top-1 left-0 bg-pink-100 text-pink-600 px-2 py-1 rounded-full text-xs font-semibold">
+        Featured
       </div>
+
+      {/* Categories and Topics */}
+      <div className="flex items-center justify-start gap-2 mb-4">
+        <p className="px-3 py-1 rounded-full bg-gray-100 text-gray-600 font-semibold text-sm">
+          {data.Category}
+        </p>
+        <p className="px-3 py-1 rounded-full bg-gray-100 text-gray-600 font-semibold text-sm">
+          {data.Topic}
+        </p>
+      </div>
+
+      {/* Title */}
+      <h3 className="font-semibold text-gray-800 text-lg mb-6">
+        {data.Title}
+      </h3>
+
+      {/* Explore Button */}
+      <button className="absolute bottom-1 left-2 px-4 py-2 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-700 transition-colors duration-300">
+        Explore
+      </button>
     </div>
   </Link>
 );

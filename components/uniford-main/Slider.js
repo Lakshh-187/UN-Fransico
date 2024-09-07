@@ -68,7 +68,7 @@ const MySlider = () => {
   };
 
   return (
-    <div className="w-full sm:w-3/4 mx-auto">
+    <div className="w-4/5 sm:w-3/4 mx-auto">
       <div className="mt-20">
         <Slider {...settings}>
           {data.map((item, index) => (

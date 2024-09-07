@@ -24,14 +24,16 @@ function SignUp() {
 
         {/* Right content  */}
         <div className=" flex flex-col justify-start md:items-start  items-center  h-full  md:w-[45%]  w-full  ">
-          <div className=" flex  mt-10">
+          <div className="flex mt-10 relative w-full">
             <p className="md:text-7xl  sm:text-9xl text-7xl  font-bold  text-[#203a63] ">
               Uniford
             </p>
+            <div className="absolute right-0 top-0">
             <ImageOverlay />
+           </div>
           </div>
 
-          <p className="md:text-5xl  sm:text-7xl text-4xl md:mt-1  mt-7 ">
+          <p className="md:text-4xl  sm:text-7xl text-4xl md:mt-1  mt-7 ">
             Create an account
           </p>
           <p className=" text-[#969696] md:text-lg  sm:text-2xl text-lg md:mt-1   mt-2  ml-1">

@@ -14,6 +14,8 @@ import { useSelector } from 'react-redux'
 import { fetchCollection } from '@/services/firestore'
 import Loading from '@/components/loader/loader'
 import Link from 'next/link'
+import SocialWorkUpload from '@/components/SocialWorkUpload'
+import { URL, urlToHttpOptions } from 'url'
 function Page() {
   const isMember = useSelector((state) => state.user.userData.isMember);
   const [category, setCategory] = useState('Software')
@@ -123,11 +125,13 @@ function Page() {
 
   return (
     <>
-      <div className='w-full bg-[#F2FFF4]'>
+      <div className='w-full bg-[#F2FFF4] relative'>
         <div style={{ backgroundImage: `url(${plantation.src})` }} className='w-full h-64 md:h-96 lg:h-[80vh] bg-cover bg-no-repeat bg-center'>
-          <div className='hidden md:flex flex-col ml-[10%] md:ml-[15%] justify-center h-full w-4/5 lg:w-3/5 gap-4 lg:gap-6'>
-            <h1 className='text-xl md:text-2xl lg:text-3xl font-bold text-[#306131]'>Why pay the full price when you can get exclusive access for just ₹5 to ₹14 with a membership?</h1>
-            <button className='bg-[#306131] text-white w-36 rounded-xl py-2 text-sm md:text-base'>Buy Now</button>
+          <div className=' flex flex-col ml-[10%] md:ml-[30%] justify-center h-full w-4/5 lg:w-3/5 gap-4 lg:gap-6 absolute '>
+            <h1 className='text-xl md:text-2xl lg:text-3xl font-bold text-[#306131] z-50'>📹 Upload Your Social Work Video and Get a Free Product!</h1>
+            <a href="#socialWorkUpload">
+              <button className='bg-blue-500 text-white w-36 rounded-xl py-2 px-4 text-sm md:text-base z-50'>Explore more</button>
+            </a>
           </div>
         </div>
       </div>
@@ -135,7 +139,7 @@ function Page() {
       {cart ? <Cart setCart={setCart} /> : renderPlants()}
 
       <h1 className='text-center font-bold text-2xl md:text-3xl my-10'>Why people choose Us?</h1>
-      <div className='w-11/12 mx-auto flex flex-col md:flex-row gap-8'>
+      <div className='w-11/12 mx-auto mb-10 flex flex-col md:flex-row gap-8'>
         <div className='w-full md:w-1/2 h-60 md:h-[35rem] lg:h-[40rem] rounded-xl p-6 md:p-10 bg-cover bg-center bg-no-repeat shadow-md flex flex-col gap-4' style={{ backgroundImage: `url(${whyChooseUs.src})` }}>
           <h1 className='font-bold text-lg md:text-2xl lg:text-3xl w-4/5'>BECOME SKILLED AT WHAT MATTERS</h1>
           <button className='rounded-full border bg-[#203a63] text-white text-sm md:text-base w-3/4 md:w-1/3 p-2'>Read Our Story --{'>'}</button>
@@ -147,14 +151,18 @@ function Page() {
         </div>
       </div>
 
-      <div className='w-11/12 mx-auto py-10 rounded-3xl my-28 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: `url(${everyoneDeservesPlant.src})` }}>
-        <div className='md:w-5/6 lg:w-3/5 mx-auto bg-black/50 backdrop-opacity-80 rounded-2xl flex flex-col text-white items-center gap-4 text-center p-5'>
+      <div className='w-11/12 mx-auto py-10 rounded-3xl mt-36 bg-cover bg-no-repeat bg-center' style={{ backgroundImage: `url(/banner.png)` }}>
+        <div className='md:w-5/6 lg:w-3/5 mx-auto bg-black/50 backdrop-opacity-80 rounded-2xl flex flex-col text-white font-extrabold place-items-center gap-4 text-center p-5'>
           <h1 className='text-lg md:text-2xl'>We believe everyone deserves a plant</h1>
           <p className='text-xs md:text-base'>Regardless of your plant expertise, we can provide you with information, connections, inspiration as you pursue your interest in gardening.</p>
           <Link href={'/Donate-premium'}>
           <button className='border text-xs md:text-base border-white w-max px-6 md:px-10 py-2 rounded-full'>Donate Premium --{'>'}</button>
           </Link>
         </div>
+      </div>
+
+      <div id="socialWorkUpload">
+        <SocialWorkUpload />
       </div>
     </>
   )

@@ -24,12 +24,10 @@ export default function AITools() {
           />
           <div className="w-full flex items-center flex-col justify-self-center gap-3">
             <h1 className="font-semibold xl:text-5xl md:text-3xl text-2xl">
-              Rising Unicorns Resources
+            🎓 Student Benefits Portal
             </h1>
-            <p className="w-3/5 text-lg text-center">
-              Below you can find all of the different resources in the Guide:
-              practice problems, former Google interview questions, online
-              courses, videos, and more.
+            <p className="w-3/5 text-lg text-center z-50">
+            Unlock a world of opportunities and benefits with your Student ID!— stay updated with every opportunity you deserve, right here!
             </p>
             <div className="xl:w-1/4 w-fit bg-[#f7ed81] rounded-full my-4">
               <button className="flex items-center gap-3 px-7 py-3 text-nowrap rounded-full bg-black text-white w-[98%]">
@@ -56,9 +54,9 @@ export default function AITools() {
           </div>
         </div>
 
-            <h1 className="text-4xl font-bold text-center mb-8 pt-6 text-gray-900">
+            {/* <h1 className="text-4xl font-bold text-center mb-8 pt-6 text-gray-900">
                 Student Benefits
-            </h1>
+            </h1> */}
 
             <div className="mb-6 text-center">
                 <select

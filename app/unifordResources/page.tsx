@@ -23,16 +23,16 @@ function page() {
       title: "Educational Tools",
       link: "/ai-tool",
       imgSrc: "https://i.ibb.co/VmTyR7V/Educational-Tools-416-x-406-px-1.png",
-      text: "Clich here",
+      text: "Click here",
       gradient: "bg-gradient-to-r from-white to-[#e1d5f2]",
       message:
         "Discover a suite of educational tools designed to help students enhance their learning and save valuable time",
     },
     {
-      title: "Treasure Gallery",
-      link: "#",
+      title: "Class-12 Treasure Gallery",
+      link: "/class-12",
       imgSrc: "/unifordResources/res1.svg",
-      text: "Coming Soon",
+      text: "Click here",
       gradient: "bg-gradient-to-r from-white to-[#ece0c1]",
       message:
         "Where hidden websites, important tools, and resources from around the world await to empower.",
@@ -169,7 +169,7 @@ function page() {
                         alt="..."
                         className="h-6 w-6 rounded-full"
                       />
-                      <h3 className="font-semibold text-xl text-center">
+                      <h3 className="font-semibold text-xl text-wrap">
                         {item.title}
                       </h3>
                     </div>

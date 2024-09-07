@@ -11,8 +11,9 @@ import {
   FaInfoCircle,
   FaCoins,
   FaCreditCard,
+  FaIdCard,
 } from 'react-icons/fa';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useAuth } from '@/context/AuthContext'; // Adjust path as needed
 import { useDispatch, useSelector } from 'react-redux';
 import { toast, ToastContainer } from 'react-toastify';
@@ -20,11 +21,35 @@ import 'react-toastify/dist/ReactToastify.css';
 import { initiatePayment } from '@/utils/razorPayUtils';
 import { updateUserDoc } from '@/services/firestore';
 import { userSliceActions } from '@/redux/user';
+import  TermsDialog  from '@/components/Condition';
+import Upload from '@/components/Upload';
+import CommunityGrants from '@/components/grant-program/CommunityGrants';
+import CommunityGrantsPage from '@/components/CommunityGrantsProgram';
+import Link from 'next/link';
+
+import { AiOutlineCreditCard } from 'react-icons/ai'; // Updated icon for Scholar Aid and Financial Aid buttons
+import { RiSecurePaymentLine } from 'react-icons/ri';
+import { MdPayment } from 'react-icons/md';
+import { FaHandHoldingUsd, FaPiggyBank } from 'react-icons/fa';
 
 const Layout = () => {
   const { currentUser } = useAuth();
   const dispatch = useDispatch();
   const isMember = useSelector((state: any) => state.user.userData.isMember);
+  const [isChecked, setIsChecked] = useState(false);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const handleCheckboxChange = (event: any) => {
+    setIsChecked(event.target.checked);
+  };
+
+  const openTermsDialog = () => {
+    setIsDialogOpen(true);
+  };
+
+  const closeTermsDialog = () => {
+    setIsDialogOpen(false);
+  };
 
   useEffect(() => {
     const loadRazorpayScript = async () => {
@@ -52,6 +77,11 @@ const Layout = () => {
   }, []);
 
   const handlePayNow = async() => {
+    if (!isChecked) {
+      toast.error('Please Click the checkbox to proceed with the payment');
+      return;
+    }
+
     if (!currentUser) {
       toast.error('Please log in first to proceed with the payment');
       return;
@@ -91,19 +121,62 @@ const Layout = () => {
           </h2>
           <p className="text-gray-700 text-base">₹500</p>
           {isMember ? (
+            <div className="flex flex-col justify-center items-start space-y-4 md:space-y-0 md:space-x-4 mt-2">
            <button
            className="bg-red-600 mt-5 mb-10 text-white py-2 px-4 text-lg font-bold rounded-3xl hover:bg-red-700 flex items-center"
            disabled
          >
            <FaCreditCard className="mr-2" /> Your Membership is active
          </button>
-          ) : (
+
+         <Link href="https://forms.gle/VJJCWM2wzcZjT8YK8">
             <button
-              className="bg-indigo-600 mt-5 mb-10 text-white py-2 px-4 text-lg font-bold rounded-3xl hover:bg-indigo-700 flex items-center"
-              onClick={handlePayNow}
+                className="bg-blue-600 text-white py-3 px-6 text-lg font-bold rounded-3xl hover:bg-blue-700 flex items-center justify-center shadow-lg transform transition-transform hover:scale-105 w-full"
             >
-              <FaCreditCard className="mr-2" /> Pay Now
+                <FaIdCard className="mr-2" /> ID Card Form
             </button>
+        </Link>
+         </div>
+          ) : (
+            <div className="p-4">
+    <label className="inline-flex items-center">
+        <input
+            type="checkbox"
+            className="form-checkbox"
+            checked={isChecked}
+            onChange={handleCheckboxChange}
+        />
+        <span className="ml-2 text-lg">
+            I agree to the <TermsDialog isOpen={openTermsDialog} onClose={closeTermsDialog} />
+        </span>
+    </label>
+
+    <button
+        className={`bg-indigo-600 mt-5 text-white py-3 px-6 text-lg font-bold rounded-3xl hover:bg-indigo-700 flex items-center justify-center shadow-lg transition-opacity duration-300 ${isChecked ? 'opacity-100' : 'opacity-50 cursor-not-allowed'}`}
+        onClick={handlePayNow}
+        disabled={!isChecked}
+    >
+        <MdPayment className="mr-2" /> Pay Now
+    </button>
+
+    <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-4 mt-10">
+        <Link href="https://forms.gle/3EiHaNBkXAmghiQb6">
+            <button
+                className="bg-red-600 text-white py-3 px-6 text-lg font-bold rounded-3xl hover:bg-red-700 flex items-center justify-center shadow-lg transform transition-transform hover:scale-105 w-full"
+            >
+                <FaHandHoldingUsd className="mr-2" /> Scholar Aid
+            </button>
+        </Link>
+
+        <Link href="https://forms.gle/MUhJznejqeztS3KR6">
+            <button
+                className="bg-green-600 text-white py-3 px-6 text-lg font-bold rounded-3xl hover:bg-green-700 flex items-center justify-center shadow-lg transform transition-transform hover:scale-105 w-full"
+            >
+                <FaPiggyBank className="mr-2" /> Financial Aid
+            </button>
+        </Link>
+    </div>
+</div>
           )}
           {/* Refund Process */}
           <h2 className="text-2xl font-semibold mt-6 mb-4 text-indigo-700 flex items-center">
@@ -197,6 +270,8 @@ const Layout = () => {
         </div>
       </div>
 
+      <CommunityGrantsPage />
+
       {/* Why Membership Fees */}
       <div className="flex items-center justify-center">
         <div className="p-6 bg-white w-full max-w-screen-md rounded-lg shadow-lg mt-6">
@@ -222,6 +297,8 @@ const Layout = () => {
           </ul>
         </div>
       </div>
+
+      <Upload />
 
       <FAQ />
       <ToastContainer />

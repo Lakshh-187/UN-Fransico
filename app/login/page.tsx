@@ -37,17 +37,19 @@ function Login() {
 
         {/* Right content */}
         <div className=" flex  flex-col  justify-start md:items-start  items-center md:w-[45%]  w-full  ">
-          <div className=" flex  mt-10">
+          <div className=" flex relative w-full mt-10">
             <p className="md:text-7xl  sm:text-9xl text-7xl  font-bold  text-[#203a63] ">
               Uniford
             </p>
+            <div className="absolute right-0 top-0">
             <ImageOverlay />
+           </div>
           </div>
 
           <p className="md:text-5xl  sm:text-7xl text-5xl md:mt-1  mt-8 ">
             Login
           </p>
-          <p className=" text-[#969696] md:text-lg  sm:text-2xl text-lg md:mt-1   mt-4  ml-1">
+          <p className=" text-[#969696] md:text-lg  sm:text-2xl text-lg md:mt-1 w-4/5   mt-4  ml-1">
             Please login to continue to your account.
           </p>
 

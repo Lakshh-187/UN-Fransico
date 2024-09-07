@@ -92,7 +92,7 @@ export default function Chatbot() {
   };
 
   return (
-    <div className={`fixed bottom-4 left-4 ${isMinimized ? 'w-16 h-16 rounded-full' : 'w-full max-w-sm h-[calc(100vh-4rem)]'} ${isMinimized ? 'left-0' : 'left-4'} transition-all duration-300`}>
+    <div className={`fixed z-50 bottom-4 left-4 ${isMinimized ? 'w-16 h-16 rounded-full' : 'w-full max-w-sm h-[calc(100vh-4rem)]'} ${isMinimized ? 'left-0' : 'left-4'} transition-all duration-300`}>
       {!isMinimized && (
         <div className="bg-white p-4 rounded-lg shadow-lg h-full overflow-hidden">
           <div className="flex justify-between items-center mb-4">

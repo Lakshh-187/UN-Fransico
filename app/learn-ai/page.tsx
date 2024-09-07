@@ -23,12 +23,10 @@ export default function AITools() {
           />
           <div className="w-full flex items-center flex-col justify-self-center gap-3">
             <h1 className="font-semibold xl:text-5xl md:text-3xl text-2xl">
-              Rising Unicorns Resources
+            🤖 Learn AI for Career
             </h1>
             <p className="w-3/5 text-lg text-center">
-              Below you can find all of the different resources in the Guide:
-              practice problems, former Google interview questions, online
-              courses, videos, and more.
+            Explore a wide range of AI technologies and understand their working mechanisms — all for free! Dive deep into AI and give your career a powerful boost.
             </p>
             <div className="xl:w-1/4 w-fit bg-[#f7ed81] rounded-full my-4">
               <button className="flex items-center gap-3 px-7 py-3 text-nowrap rounded-full bg-black text-white w-[98%]">

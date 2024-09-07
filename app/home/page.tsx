@@ -71,32 +71,6 @@ export default function Home() {
                         </h1>
                         {/* search section */}
                         <div className="flex flex-col gap-7">
-                            {/* <div className="border flex items-center lg:w-3/4 m-2 rounded-full overflow-hidden bg-white">
-                <div className="p-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="icon icon-tabler icons-tabler-outline icon-tabler-search"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
-                    <path d="M21 21l-6 -6" />
-                  </svg>
-                </div>
-                <input
-                  type="text"
-                  onKeyDown={handleKeyDown}
-                  placeholder="Find your Institute."
-                  className="w-full border-0 p-5 focus:outline-none"
-                />
-              </div> */}
                             <div className="flex flex-col gap-3 justify-between">
                                 <p className="px-6 py-3 rounded-xl bg-white text-gray-500 w-4/5 flex items-center justify-center gap-3">
                                     <svg
@@ -112,10 +86,6 @@ export default function Home() {
                                     </svg>
                                     At UN Francisco, you can gain practical knowledge and learn real-world skills that will help you transform your life at work, school, and home.
                                 </p>
-                                {/* <p className="text-gray-500">
-                  Join hands with world className scholars and seize the boundless oppurtunities and
-                  growth
-                </p> */}
                             </div>
                             <button
                                 onClick={() => {
@@ -128,34 +98,6 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="w-full h-80 lg:h-[35rem] px-8 lg:px-0 py-4 gap-4 lg:w-1/2">
-                        {/* <Link href={"/getHired"}>
-                            <img
-                                alt="img"
-                                className="w-full rounded-2xl hover:scale-105 duration-500 shadow-xl animate-bounce "
-                                src={"/home/getHired.png"}
-                            />
-                        </Link>
-                        <Link href={"/unifordResources"}>
-                            <img
-                                alt="img"
-                                className="w-full rounded-2xl hover:scale-105 duration-500 shadow-xl"
-                                src={"/home/resourceLib.png"}
-                            />
-                        </Link>
-                        <Link href={"/scholar"}>
-                            <img
-                                alt="img"
-                                className="w-full rounded-2xl hover:scale-105 duration-500 shadow-xl"
-                                src={"/home/research.png"}
-                            />
-                        </Link>
-                        <Link href={"/research"}>
-                            <img
-                                alt="Img"
-                                className="w-full rounded-2xl hover:scale-105 duration-500 shadow-xl"
-                                src={"/home/scholar.png"}
-                            />
-                        </Link> */}
                         <img
                             alt="Globe"
                             src="/home/Vector.svg"
@@ -257,35 +199,6 @@ export default function Home() {
                     </button>
                 </div>
             </div>
-            {/* <div className=" w-full">
-                <Tool description={'asdf'} id={'1'} toolContent={[
-                    {
-                        imgSrc: 'https://magicui.design/showcase/infisical.png',
-                        title: 'adsfasd',
-                        description: 'asd'
-                    },
-                    {
-                        imgSrc: 'https://magicui.design/showcase/infisical.png',
-                        title: 'adsfasd',
-                        description: 'asd'
-                    },
-                    {
-                        imgSrc: 'https://magicui.design/showcase/infisical.png',
-                        title: 'adsfasd',
-                        description: 'asd'
-                    },
-                    {
-                        imgSrc: 'https://magicui.design/showcase/infisical.png',
-                        title: 'adsfasd',
-                        description: 'asd'
-                    },
-                    {
-                        imgSrc: 'https://magicui.design/showcase/infisical.png',
-                        title: 'adsfasd',
-                        description: 'asd'
-                    },
-                ]} toolImage={''} toolName={'asdf'} />
-            </div> */}
             
 
           <div className="my-24 w-[95%]">
@@ -382,61 +295,8 @@ export default function Home() {
           )}
                     </div>
                 </div>
-
-                {/* why Uniwave */}
-                {/* <div className="mt-16 lg:my-16 p-5 w-11/12 mx-auto">
-                    <h3 className="text-4xl font-semibold text-center">
-                        Why become a{" "}
-                        <span className="text-4xl text-primaryGreen">Uniwave Scholar?</span>{" "}
-                    </h3>
-                    <Benefits />
-                </div> */}
             </div>
-
-            {/* research and dev */}
-            {/* <div className="bg-[#f6f8fa] shadow-md w-11/12 mx-auto rounded-xl py-5 lg:p-10 my-24">
-                <div className="w-11/12 flex gap-8 flex-col md:flex-row mx-auto items-center relative">
-                    <div className="w-full md:w-1/2">
-                        <div className="w-full bg-[#D9D9D9] rounded-3xl overflow-hidden">
-                            <img
-                                alt="img"
-                                src="https://i.ibb.co/PgCbZHH/rnd4.jpg"
-                                height={400}
-                                width={400}
-                                className="h-full w-full"
-                            />
-                        </div>
-                    </div>
-                    <div className="w-full md:w-1/2 flex flex-col p-5 gap-5 ">
-                        <div className="flex justify-between items-center">
-                            <div>
-                                <h1 className="text-5xl font-bold mb-4">Research and </h1>
-                                <h1 className="text-5xl text-primaryGreen font-bold">
-                                    Development
-                                </h1>
-                            </div>
-                            <Link
-                                href={"/research"}
-                                className="text-primaryGreen absolute top-0 right-0"
-                            >
-                                View more
-                            </Link>
-                        </div>
-                        <p>
-                            Uniwave Foundation works on various projects to address real-world
-                            environmental challenges, providing funding, grants, and
-                            mentorship to R&D teams. We also welcome skilled and passionate
-                            students interested in research to join{" "}
-                        </p>
-                        <button
-                            onClick={() => router.push("/research")}
-                            className="bg-[#28487c] my-4 w-2/5 h-12 rounded-xl text-white text-lg font-bold hidden lg:block"
-                        >
-                            Explore Resources
-                        </button>
-                    </div>
-                </div>
-            </div> */}
+           
 
             <div className="bg-[#EFF2F573] w-full rounded-xl px-0 py-10 lg:p-10 my-8">
                 <div className="w-11/12 rounded-3xl p-5 flex flex-col-reverse md:flex-row mx-auto items-center bg-white  shadow-md">
@@ -514,32 +374,7 @@ export default function Home() {
     className="rounded-xl"
   />
 </div>
-                    {/* <div className="w-full md:w-1/2">
-                        <img
-                            alt="img"
-                            src="https://i.ibb.co/LkW1smp/skilled-Researcher1.png"
-                            className="rounded-xl"
-                        />
-                    </div> */}
                 </div>
-                {/* trending domains */}
-                {/* <div className="my-24">
-                    <h1 className="text-4xl text-center font-bold my-10">
-                        Trending <span className="text-primaryGreen">Domains:</span>
-                    </h1>
-                    <div className="md:flex md:flex-wrap md:justify-center grid grid-cols-2 gap-4 my-5 w-11/12 mx-auto">
-                        {trendingDomains.map((item, idx) => {
-                            return (
-                                <div
-                                    key={idx}
-                                    className="shadow-md md:w-[14rem]  text-xs sm:text-base flex items-center justify-center p-4 rounded-full bg-[#EBE8FD]"
-                                >
-                                    <p>{item}</p>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div> */}
             </div>
 
             <div className="bg-[#F6FAFF] w-full rounded-xl p-4 md:p-8 my-24">
@@ -594,20 +429,7 @@ export default function Home() {
                         />
                     </div>
                 </div>
-                {/* <div className="my-20 mx-auto w-11/12 flex flex-col gap-5 items-center rounded-xl shadow-xl p-10">
-                    <h1 className="text-4xl w-full text-center font-bold">Donate Us
-                    </h1>
-                    <p className="text-center text-xl text-gray-500">We welcome those who wish to donate premium software, websites, notes, or any <br /> kind of courses for our foundation&apos;s volunteers and members.</p>
-                    <button className="bg-purple-600 py-2 px-10 text-white rounded-lg">Submit</button>
-                </div> */}
-
-
-
-
-
-
-
-<div className="w-11/12 rounded-3xl p-5 flex flex-col-reverse md:flex-row mx-auto items-center bg-white mt-20 shadow-md">
+            <div className="w-11/12 rounded-3xl p-5 flex flex-col-reverse md:flex-row mx-auto items-center bg-white mt-20 shadow-md">
                     <div className="w-full md:w-1/2 flex flex-col p-5 gap-5">
                         <div>
                             <h1 className="text-3xl font-bold">

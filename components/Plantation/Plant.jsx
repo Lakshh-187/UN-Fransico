@@ -5,7 +5,7 @@ import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
 import { useDispatch, useSelector } from 'react-redux';
 import { addItem } from '../../redux/features/cartSlice';
-import { FaCloudDownloadAlt, FaRupeeSign, FaTree } from 'react-icons/fa';
+import { FaCloudDownloadAlt, FaRupeeSign, FaTree, FaStar } from 'react-icons/fa';
 import { toast } from 'react-toastify';
 import { initiatePayment } from '@/utils/razorPayUtils';
 import { useAuth } from '@/context/AuthContext';
@@ -20,10 +20,17 @@ const style = {
     outline: 'none',
 };
 
+// Function to generate random border color
+const randomBorderColor = () => {
+    const colors = ['#f5a623', '#4caf50', '#03a9f4', '#e91e63', '#ff5722', '#9c27b0', '#795548'];
+    return colors[Math.floor(Math.random() * colors.length)];
+};
+
 const Plant = ({ img, name, rate, category, deliver, tag, id, downloadLink }) => {
     const [open, setOpen] = useState(false);
     const [purchased, setPurchased] = useState(false);
     const [loading, setLoading] = useState(false);
+    const [borderColor, setBorderColor] = useState(randomBorderColor()); // Assign random border color
     const dispatch = useDispatch();
     const { currentUser } = useAuth();
     const isMember = useSelector((state) => state.user.userData.isMember);
@@ -109,15 +116,29 @@ const Plant = ({ img, name, rate, category, deliver, tag, id, downloadLink }) =>
     };
 
     return (
-        <div className='flex flex-col h-full hover:scale-105 transition-transform duration-300 ease-in-out'>
+        <div className='relative flex flex-col h-full hover:scale-105 transition-transform duration-300 ease-in-out'>
             {loading && <Loading />}
 
-            <div className='flex flex-col flex-1 rounded-3xl shadow-lg cursor-pointer h-full justify-between p-3 items-center space-y-3 border-4 border-gray-50 hover:shadow-2xl transition-shadow duration-300 ease-in-out'>
+            {/* Card with random border and shadow */}
+            <div 
+                className='relative flex flex-col flex-1 rounded-3xl shadow-lg cursor-pointer h-full justify-between p-3 items-center space-y-3 bg-white'
+                style={{ 
+                    borderColor: '#03a9f4', 
+                    boxShadow: `0px 4px 8px #03a9f4`, 
+                    borderWidth: '1px',
+                }}
+            >
+                {/* Featured Label */}
+                <div className='absolute top-2 left-2 bg-yellow-500 text-white px-3 py-1 rounded-full flex items-center space-x-1 shadow-lg'>
+                    <FaStar />
+                    <span className='text-xs font-semibold'>Featured</span>
+                </div>
+
                 <div onClick={handleOpen} className='flex flex-col gap-4 w-full flex-1'>
-                    <img src={img} alt={name} className='h-40 w-full object-cover rounded-2xl shadow-md transition-transform duration-300 ease-in-out' />
+                    <img src={img} alt={name} className='h-48 w-full object-cover rounded-2xl shadow-md transition-transform duration-300 ease-in-out' />
                     <h1 className='text-lg font-semibold text-gray-900 w-full text-left'>{name}</h1>
                     <p className={`text-sm w-full text-left flex items-center justify-start`}>
-                    {category === 'Software' ? 'Out of Stock' : <><FaRupeeSign className="mr-0.5" />{rate}<FaTree className='ml-2 text-green-700' /></>}
+                        {category === 'Software' ? 'Out of Stock' : <><FaRupeeSign className="mr-0.5" />{rate}<FaTree className='ml-2 text-green-700' /></>}
                     </p>
                     <p className='text-gray-600 w-full text-left text-sm flex items-center gap-2'>
                         <FaCloudDownloadAlt size={16} />
@@ -136,7 +157,7 @@ const Plant = ({ img, name, rate, category, deliver, tag, id, downloadLink }) =>
                     ) : (
                         downloadLink ? (
                             !purchased ? (
-                                <>
+                                <div>
                                     <button 
                                         onClick={addToCart} 
                                         className='rounded-full border border-green-600 text-green-600 w-1/2 p-2 transition-all duration-300 ease-in-out hover:bg-green-600 hover:text-white'
@@ -149,7 +170,7 @@ const Plant = ({ img, name, rate, category, deliver, tag, id, downloadLink }) =>
                                     >
                                         Buy Now
                                     </button>
-                                </>
+                                </div>
                             ) : (
                                 <button 
                                     onClick={handleDownload} 
@@ -190,12 +211,12 @@ const Plant = ({ img, name, rate, category, deliver, tag, id, downloadLink }) =>
                                 <p className='text-red-600 text-lg'>₹{rate}</p>
                             )}
                             {category === 'Software' ? (
-                                <button disabled className='rounded-full border border-solid border-black bg-gray-200 text-gray-400 w-2/3 md:w-1/3 p-2 cursor-not-allowed'>Coming Soon</button>
+                                <button disabled className='rounded-full border border-solid border-black bg-gray-200 text-gray-400 w-2/3 md:w-1/2 lg:w-1/3 p-2 cursor-not-allowed'>Coming Soon</button>
                             ) : (
                                 !purchased ? (
-                                    <button onClick={addToCart} className='rounded-full border bg-green-600 text-white w-2/3 md:w-1/3 p-2 transition-all duration-300 ease-in-out hover:bg-green-700'>Add to cart →</button>
+                                    <button onClick={addToCart} className='rounded-full border bg-green-600 text-white w-2/3 md:w-1/2 lg:w-1/3 p-2 transition-all duration-300 ease-in-out hover:bg-green-700'>Add to cart →</button>
                                 ) : (
-                                    <button onClick={handleDownload} className='rounded-full border bg-blue-600 text-white w-2/3 md:w-1/3 p-2 transition-all duration-300 ease-in-out hover:bg-blue-700'>Download</button>
+                                    <button onClick={handleDownload} className='rounded-full border bg-blue-600 text-white w-2/3 md:w-1/2 lg:w-1/3 p-2 transition-all duration-300 ease-in-out hover:bg-blue-700'>Download</button>
                                 )
                             )}
                         </div>

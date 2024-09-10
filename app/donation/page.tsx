@@ -31,6 +31,7 @@ import { AiOutlineCreditCard } from 'react-icons/ai'; // Updated icon for Schola
 import { RiSecurePaymentLine } from 'react-icons/ri';
 import { MdPayment } from 'react-icons/md';
 import { FaHandHoldingUsd, FaPiggyBank } from 'react-icons/fa';
+import ScholarIDCard from '@/components/Id-card';
 
 const Layout = () => {
   const { currentUser } = useAuth();
@@ -270,6 +271,8 @@ const Layout = () => {
         </div>
       </div>
 
+      <ScholarIDCard />
+
       <CommunityGrantsPage />
 
       {/* Why Membership Fees */}
@@ -297,6 +300,8 @@ const Layout = () => {
           </ul>
         </div>
       </div>
+
+      {/* <ScholarIDCard /> */}
 
       <Upload />
 

@@ -71,6 +71,12 @@ const Navbar = (props: Props) => {
       },
     },
     {
+      title: "6 i",
+      pushTo: () => {
+        router.push("/six-i");
+      },
+    },
+    {
       title: "Membership",
       pushTo: () => {
         router.push("/donation");
@@ -102,7 +108,7 @@ const Navbar = (props: Props) => {
             className="h-8 w-8"
           />
         </div>
-        <div className="hidden md:flex md:w-[60%] h-[3rem] items-center justify-center bg-[#f5f5f5] rounded-full">
+        <div className="hidden md:flex md:w-[70%] h-[3rem] items-center justify-center bg-[#f5f5f5] rounded-full">
           <div className="w-full flex justify-evenly text-[#203a63]">
             {links.map((link, index) => (
               <div

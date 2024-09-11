@@ -3921,3 +3921,89 @@ export const LearnAI = [
   "llm-tag 3": "#ai"
  }
 ]
+
+export const sixi = [{
+    "Title": "Donate Old Shoes",
+    "Use Of It": "Given to underprivileged children and adults.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/PF1hg1D\/a-photo-of-a-person-handing-over-a-pair-of-worn-ou-a7oz-PUIi-QVKTIKq-TPNh-Frw-UHb-OBMb-KTXWh8-RO1lcr.jpg"
+   },
+   {
+    "Title": "Donate Old Clothes",
+    "Use Of It": "Distributed to poor families and disaster-hit regions.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/86VVX9L\/a-photo-of-a-person-handing-over-a-bundle-of-folde-vh-Ig3d-Q-RHy-EBwo-OOF88ag-uawo-0-B-QM-GA3z9-N66r.jpg"
+   },
+   {
+    "Title": "Donate Books",
+    "Use Of It": "Supplied to schools, libraries, and community centers.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/Hn3ZkV2\/a-photo-of-a-woman-donating-books-to-poor-children-4-Ohauee-UTHay-EH6ih-ANa4-A-g-Wl-IIYp-YTx-WUhp-Th.jpg"
+   },
+   {
+    "Title": "Donate Mattresses",
+    "Use Of It": "Provided to shelters, orphanages, and the homeless.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/Z8ZxbzD\/a-powerful-image-of-a-single-mattress-being-placed-sx-Pl-JOz-SM2-Itq21-BHYq2g-adk-NK31f-Qd-qs-U8pr-H.jpg"
+   },
+   {
+    "Title": "Donate Raw Food",
+    "Use Of It": "Donated to food banks and homeless shelters.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/WKv4xgs\/a-heartwarming-scene-of-volunteers-at-a-bustling-c-WLLgh-Qt-BQ7me5cul-CVs-ICw-o-Ke-KFh-IWRTa4-U8-Ub.jpg"
+   },
+   {
+    "Title": "Donate Hair",
+    "Use Of It": "Used for making wigs for cancer patients and oil spill cleanup.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/48Cv5Nd\/a-powerful-and-emotional-split-frame-image-on-the-VTaf-i-Um-SVO7-ZKZue-Kjml-Q-qlb-WFcp-JTny7-Bb-Qq9.jpg"
+   },
+   {
+    "Title": "Donate Blood",
+    "Use Of It": "Provided to hospitals and emergency services.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/DkBDKn1\/a-photo-of-a-young-adult-donating-blood-at-a-moder-F8-BH03vj-T1-GKVGoho-Upb-Pw-a-Sh-ZRi7-QQFqijc-F9s.jpg"
+   },
+   {
+    "Title": "Donate Body Organs",
+    "Use Of It": "Used for organ transplants for patients in critical need.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/7yYCdR4\/a-photo-of-a-symbolic-sculpture-of-a-heart-held-in-rz-St-OBv-RSam-Sr-ZO2guo-L9-A-WFs-Rg93-KQ-mk-WP7r.jpg"
+   },
+   {
+    "Title": "Donate Agriculture Tools",
+    "Use Of It": "Given to farmers in rural and developing regions.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/qyT89Ns\/a-photo-of-a-farmer-in-a-field-happily-receiving-a-Xe98-Dqa-CTZW7h-VWl-FAd-Fgg-Cp-Vw-Je-ZYSq2-Ms4p0s.jpg"
+   },
+   {
+    "Title": "Donate Seeds",
+    "Use Of It": "Distributed to community gardens and farms.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/KG9CNf5\/a-serene-image-of-hands-planting-donated-seeds-int-6-HLTJhgq-Qei-NW7kgj-NKTDA-0-JCb-EUZ-SGOz966-WDEF.jpg"
+   },
+   {
+    "Title": "Donate Milk Packets",
+    "Use Of It": "Used for growing plants from seeds and creating eco-bricks.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/Xyy2K57\/a-photo-of-a-recycled-milk-packet-planter-on-a-win-l4-Ftdb-Vh-QVyz-BHD3qv73l-Q-1pu-MRF8b-Qjix-x-KSVz.jpg"
+   },
+   {
+    "Title": "Donate Glass Bottles of Wine",
+    "Use Of It": "Repurposed into decorative items, plates, and glasses.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/fq2rX1S\/a-photo-of-a-workshop-where-donated-glass-wine-bot-zz-PCqx-EBRZa-Ul-Lbfj-K0r-Lw-M1h-Gl-m-WRte-Te-Uc.jpg"
+   },
+   {
+    "Title": "Donate Aluminum Bottles",
+    "Use Of It": "Transformed into garden planters and eco-friendly items.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/rxL9WmK\/a-photo-of-a-vibrant-community-garden-with-a-rusti-ak1-DZoa-LSWq-Ca-Xvbdaxd9-A-Q1i486d-UQ6iy-g-On-TB.jpg"
+   },
+   {
+    "Title": "Donate Glass Bottles",
+    "Use Of It": "Converted into eco-friendly bricks, jars, or vases.",
+    "Whatshapp Icon ": "Support ",
+    "Image links ": "https:\/\/i.ibb.co\/fq2rX1S\/a-photo-of-a-workshop-where-donated-glass-wine-bot-zz-PCqx-EBRZa-Ul-Lbfj-K0r-Lw-M1h-Gl-m-WRte-Te-Uc.jpg"
+   }
+]

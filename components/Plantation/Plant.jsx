@@ -134,7 +134,7 @@ const Plant = ({ img, name, rate, category, deliver, tag, id, downloadLink }) =>
                     <span className='text-xs font-semibold'>Featured</span>
                 </div>
 
-                <div onClick={handleOpen} className='flex flex-col gap-4 w-full flex-1'>
+                <div onClick={handleOpen} className='flex flex-col gap-3 w-full flex-1'>
                     <img src={img} alt={name} className='h-48 w-full object-cover rounded-2xl shadow-md transition-transform duration-300 ease-in-out' />
                     <h1 className='text-lg font-semibold text-gray-900 w-full text-left'>{name}</h1>
                     <p className={`text-sm w-full text-left flex items-center justify-start`}>

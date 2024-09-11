@@ -222,9 +222,19 @@ const Page: React.FC = () => {
 
 const Card: React.FC<{ data: Schema }> = ({ data }) => (
     <Link href={data.Links} className="block shadow-lg hover:shadow-xl transition-shadow duration-300">
-      <div className="w-full h-48 bg-white rounded-lg overflow-hidden">
+      <div className="w-full h-48 bg-white rounded-lg overflow-hidden"
+       style={{
+        borderColor: '#03a9f4', 
+        boxShadow: `0px 4px 8px #03a9f4`, 
+        borderWidth: '1px'
+    }}>
         <div className="py-5 px-4 flex flex-col gap-3 relative h-full">
-          <div className="flex items-center gap-2 mb-3">
+        <div className="absolute top-0 left-0 px-3 py-1 bg-pink-200 text-pink-700 text-sm font-medium rounded-br-lg shadow">
+                            Featured
+                        </div>
+
+          <div className="flex items-center gap-2 mb-3 mt-3">
+            
             <p className="px-3 py-1 rounded-full bg-blue-200 text-blue-600 text-sm font-semibold">
               {data.Category}
             </p>
@@ -235,8 +245,8 @@ const Card: React.FC<{ data: Schema }> = ({ data }) => (
               {data.Subject}
             </p>
           </div>
-          <h3 className="font-semibold text-lg text-gray-700 flex gap-1 items-center"><img src="/adcreative-ai.png" alt="logo" className="h-4 w-4" /> {' '}{data.Chapter}</h3>
-          <button className="absolute bottom-3 right-3 px-4 py-2 rounded-lg bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors duration-300">
+          <h3 className="font-semibold text-lg text-gray-700 flex gap-1 items-center border-b border-blue-600"><img src="/adcreative-ai.png" alt="logo" className="h-4 w-4" /> {' '}{data.Chapter}</h3>
+          <button className="absolute bottom-3 right-3 px-4 py-2 mt-2 rounded-xl bg-blue-500 text-white text-sm font-semibold hover:bg-blue-600 transition-colors duration-300">
             Explore
           </button>
         </div>

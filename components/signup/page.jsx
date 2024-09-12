@@ -1,51 +1,58 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import ImageOverlay from '../components/Auth/imageOverlay';
-import Inputs from '../components/Auth/signUpInput';
 import { useRouter } from 'next/navigation';
+import { motion } from 'framer-motion';
+import Inputs from '../components/Auth/signUpInput';
+import ImageOverlay from '../components/Auth/imageOverlay';
 
 function SignUp() {
   const router = useRouter();
- 
+
   return (
-    <main className="flex items-center justify-center md:h-full lg:pt-16 p-3 mb-20 ">
-      {/* left poster */}
-      <div className="w-4/5 h-full shadow-md p-3 lg:flex lg:justify-between lg:items-center">
-        <div className=" lg:w-[45%] w-full h-full hidden md:flex md:items-center md:justify-center bg-[#263960] rounded-tr-[100px] rounded-tl-xl rounded-bl-[100px]">
-          <Image src="/unifordScholar/r11.png" className="h-4/5 w-4/5" height={600} width={400} />
-        </div>
+    <main className="relative min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 to-white overflow-hidden">
+      {/* Background Gradient */}
+      {/* <motion.div
+        className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 opacity-30"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: [0, 0.3, 0.1] }}
+        transition={{ duration: 8, ease: 'linear', repeat: Infinity }}
+      /> */}
 
-        {/* Right content  */}
-        <div className=" flex  flex-col  justify-start md:items-start  items-center   lg:w-[45%]  w-full h-full  ">
-          <div className=" flex  mt-10">
-            <p className="md:text-7xl  sm:text-9xl text-7xl  font-bold  text-[#203a63] ">Uniford</p>
-            <ImageOverlay />
-          </div>
+      {/* Main Content */}
+      <div className="relative z-10 w-full max-w-6xl flex lg:flex-row flex-col items-center justify-center bg-white rounded-lg shadow-lg overflow-hidden">
+        {/*
+        <motion.div
+          className="lg:w-1/2 w-full h-full flex items-center justify-center bg-[#263960] rounded-tr-[100px] rounded-tl-xl rounded-bl-[100px] relative"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <motion.div
+            className="relative h-4/5 w-4/5"
+            initial={{ scale: 1 }}
+            animate={{ scale: 1.05 }}
+            transition={{ duration: 3, ease: 'easeInOut', repeat: Infinity, repeatType: 'reverse' }}
+          >
+            <Image 
+              src="/unifordScholar/r11.png" 
+              alt="Poster" 
+              className="object-cover"
+              height={600} 
+              width={400} 
+            />
+          </motion.div> */}
+        {/* </motion.div> */}
 
-          <p className="md:text-5xl  sm:text-7xl text-4xl md:mt-1  mt-7 ">Create an account</p>
-          <p className=" text-[#969696] md:text-lg  sm:text-2xl text-lg md:mt-1   mt-2  ml-1">
-            Please enter your details to sign up
-          </p>
-
-          {/* Input all the data here */}
+        {/* Right Content */}
+        <motion.div
+          className="lg:w-2/3 w-full flex items-center justify-center p-8"
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+        >
           <Inputs />
-
-          <div className="flex justify-center items-center w-[80%]">
-            <hr className="w-[40%] h-[2px] bg-[#D9D9D9]" />
-            <p className="p-4">or</p>
-            <hr className="w-[40%] h-[2px] bg-[#D9D9D9]" />
-          </div>
-
-          <p className="text-lg  ">
-            Already have an account?{' '}
-            <a
-              onClick={() => router.push('/login')}
-              className="underline hover:cursor-pointer font-semibold text-[#548702] md:pl-2">
-              Login
-            </a>
-          </p>
-        </div>
+        </motion.div>
       </div>
     </main>
   );

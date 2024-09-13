@@ -124,8 +124,8 @@ const Plant = ({ img, name, rate, category, deliver, tag, id, downloadLink }) =>
                 className='relative flex flex-col flex-1 rounded-3xl shadow-lg cursor-pointer h-full justify-between p-3 items-center space-y-3 bg-white'
                 style={{ 
                     borderColor: '#03a9f4', 
-                    boxShadow: `0px 4px 8px #03a9f4`, 
-                    borderWidth: '1px',
+                    boxShadow: `0px 4px 10px #03a9f4`, 
+                    borderWidth: '2px',
                 }}
             >
                 {/* Featured Label */}
@@ -166,7 +166,7 @@ const Plant = ({ img, name, rate, category, deliver, tag, id, downloadLink }) =>
                                     </button>
                                     <button 
                                         onClick={handlePayNow} 
-                                        className='rounded-full border border-red-600 text-black w-1/2 p-2 transition-all duration-300 ease-in-out hover:bg-red-600'
+                                        className='rounded-full border border-red-400 text-black w-1/2 p-2 transition-all duration-300 ease-in-out hover:bg-red-500'
                                     >
                                         Buy Now
                                     </button>

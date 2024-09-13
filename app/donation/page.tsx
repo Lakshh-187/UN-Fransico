@@ -12,6 +12,7 @@ import {
   FaCoins,
   FaCreditCard,
   FaIdCard,
+  FaWhatsapp,
 } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
 import { useAuth } from '@/context/AuthContext'; // Adjust path as needed
@@ -122,7 +123,7 @@ const Layout = () => {
           </h2>
           <p className="text-gray-700 text-base">₹500</p>
           {isMember ? (
-            <div className="flex flex-col justify-center items-start space-y-4 md:space-y-0 md:space-x-4 mt-2">
+            <div className="flex flex-col justify-center items-start space-y-4 md:space-y-0 md:space-x-4 mt-2 gap-4">
            <button
            className="bg-red-600 mt-5 mb-10 text-white py-2 px-4 text-lg font-bold rounded-3xl hover:bg-red-700 flex items-center"
            disabled
@@ -135,6 +136,14 @@ const Layout = () => {
                 className="bg-blue-600 text-white py-3 px-6 text-lg font-bold rounded-3xl hover:bg-blue-700 flex items-center justify-center shadow-lg transform transition-transform hover:scale-105 w-full"
             >
                 <FaIdCard className="mr-2" /> ID Card Form
+            </button>
+        </Link>
+
+        <Link href="https://whatsapp.com/channel/0029Vaeaji630LKGRyA8vW0M">
+            <button
+                className="bg-green-600 text-white py-3 px-6 text-lg font-bold rounded-3xl hover:bg-green-700 flex items-center justify-center shadow-lg transform transition-transform hover:scale-105 w-full"
+            >
+                <FaWhatsapp className="mr-2" /> Join for Updates
             </button>
         </Link>
          </div>

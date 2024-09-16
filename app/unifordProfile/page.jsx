@@ -11,7 +11,7 @@ const UnifordProfilePage = () => {
   const [tab, setTab] = useState(0);
 
   return (
-    <PrivateRoute>
+    // <PrivateRoute>
       <div className="bg-[#f6f8fa] to-white lg:p-10 flex lg:flex-row flex-col w-full mt-16">
         <div className="lg:w-1/5 w-full flex lg:flex-col flex-row gap-5 pt-4">
           <button
@@ -54,7 +54,7 @@ const UnifordProfilePage = () => {
           {tab === 3 && <Settings />}
         </div>
       </div>
-    </PrivateRoute>
+    // </PrivateRoute>
   );
 };
 

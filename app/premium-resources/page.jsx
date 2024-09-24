@@ -93,6 +93,7 @@ function Page() {
         <li onClick={changeCategory} id='2' className='px-4 py-2 mx-2 rounded-lg cursor-pointer transition-transform duration-300 ease-in-out bg-white text-gray-600 shadow-md hover:bg-green-300 hover:text-green-900'>Premium Graphics</li>
         <li onClick={changeCategory} id='3' className='px-4 py-2 mx-2 rounded-lg cursor-pointer transition-transform duration-300 ease-in-out bg-white text-gray-600 shadow-md hover:bg-green-300 hover:text-green-900'>Influencer Media</li>
         <li onClick={changeCategory} id='4' className='px-4 py-2 mx-2 rounded-lg cursor-pointer transition-transform duration-300 ease-in-out bg-white text-gray-600 shadow-md hover:bg-green-300 hover:text-green-900'>A++ Premium</li>
+        <li onClick={changeCategory} id='4' className='px-4 py-2 mx-2 rounded-lg cursor-pointer transition-transform duration-300 ease-in-out bg-white text-gray-600 shadow-md hover:bg-green-300 hover:text-green-900'>Internship</li>
       </ul>
 
       <div className='flex flex-col md:flex-row w-11/12 md:w-4/5 mx-auto justify-between text-2xl my-10'>

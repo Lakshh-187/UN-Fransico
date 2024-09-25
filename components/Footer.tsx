@@ -15,6 +15,18 @@ function Footer() {
           label: "She Inspires",
           link: "https://www.sheinspires.com/#be-inspired-video",
         },
+        {
+          label: "Career Guide",
+          link: "/career-guide",
+        },
+        {
+          label: "Boarding",
+          link: "/on-boarding",
+        },
+        {
+          label: "MOU",
+          link: "/mou",
+        },
       ],
     },
     {
@@ -23,6 +35,8 @@ function Footer() {
         { label: "Terms & Conditions", link: "/terms-conditions" },
         { label: "Privacy & Policy", link: "/privacy-policy" },
         { label: "Disclaimer", link: "/about" },
+        { label: "Benefits", link: "/benefits" },
+        { label: "Id card", link: "/Id-card" },
       ],
     },
     {

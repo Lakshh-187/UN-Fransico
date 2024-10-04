@@ -3,11 +3,11 @@ import { FaMoneyBillWave, FaClipboardList, FaGraduationCap, FaRobot, FaTicketAlt
 
 export default function MembershipBenefits() {
   return (
-    <div className="bg-white p-8 shadow-lg rounded-lg mx-auto mt-8 flex flex-col md:flex-row items-start space-y-6 md:space-y-0 md:space-x-6">
+    <div className="bg-white p-8 shadow-lg rounded-lg mx-auto mt-8 flex flex-col md:flex-row items-center md:items-start space-y-2 md:space-y-0 md:space-x-6">
       <img
-        src="/membership/image.jpg"
+        src="/membership-benefit.jpg"
         alt="Membership Benefits"
-        className="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md"
+        className="w-full md:w-1/2 h-2/3 object-cover rounded-xl shadow-md flex align-middle"
       />
       <div className="md:w-1/2">
         <h2 className="text-3xl font-bold text-blue-700 mb-4">

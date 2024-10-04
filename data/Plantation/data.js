@@ -140,23 +140,157 @@ export const features = [
     },
 ]
 
+export const internship = [
+  {
+    "title": "Compter Science Notes EP-1",
+    "Tag": "100 + Premeium flowchart Notes",
+    "actualPrice": 13,
+    "actualNK": "https://i.ibb.co/SJBpYq0/COMPUTER-SCIENCE-EP-1.jpg",
+    "img_url": "https://i.postimg.cc/jdX5BPYD/a-visually-captivating-and-informative-image-that-zd-RUakrw-Toa-Cs8n0h-GRfkg-B8irnjuv-Teuxh-Yi00-Ct-DNg.jpg"
+   },
+   {
+    "title": "Data Analyst",
+    "Tag": "101 + Premeium flowchart Notes",
+    "actualPrice": 13,
+    "actualNK": "https://i.ibb.co/z40Q3MQ/DATA-ANALYST.jpg",
+    "img_url": "https://i.ibb.co/6P3ftnc/an-infographic-style-image-titled-data-analyst-gui-BGq-K3-Mk-QSbu-Gw-DA00-B7o-Ig-k9k-JKCXXTK-b-R754a.jpg"
+   },
+   {
+    "title": "Excel Guide",
+    "Tag": "102 + Premeium flowchart Notes",
+    "actualPrice": 13,
+    "actualNK": "https://i.ibb.co/ckwdZ5h/EXCEL-GUIDE.jpg",
+    "img_url": "https://i.ibb.co/mysYJ3h/an-infographic-style-image-titled-excel-guide-feat-d-PQd-QZOh-RG2i-Cexc6a-Ox-AA-aim8-QERFQd-G7-J0-Ar.jpg"
+   },
+   {
+    "title": "Python With SQL",
+    "Tag": "103 + Premeium flowchart Notes",
+    "actualPrice": 13,
+    "actualNK": "https://i.ibb.co/X4WfPNx/PYTHON-WITH-SQL-2.jpg",
+    "img_url": "https://i.ibb.co/ZxX9W44/an-infographic-style-image-titled-python-with-sql-9v1-Wi-6x-Td6yfvsb-DEAAe-A-4-Ze4-PWsr-QCi9p-P-0ya.jpg"
+   },
+   {
+    "title": "Artificial Intelligence",
+    "category": "101 + Premeium flowchart Notes",
+    "actualPrice": 10,
+    "img_url": "https://i.postimg.cc/yY1Dnv3J/a-captivating-futuristic-image-showcasing-the-inte-It-Ars-w-WRLCYLc-Mqvcu-a-A-S4htly-FYSByd-6-Nu5-YBLgg.jpg"
+   },
+   {
+    "title": "Machine Learning",
+    "Tag": "102 + Premeium flowchart Notes",
+    "actualPrice": 12,
+    "actualNK": "https://i.ibb.co/wYPJQ8P/PYTHON-WITH-ML.jpg",
+    "img_url": "https://i.postimg.cc/8CK4P784/a-captivating-and-intricate-infographic-on-machine-p7-Z-NR9-YQf-O80y-Gm-Bvhicw-Bn-Rk-ZWmj-Tie1cmdh-u-Lk-ZQ.jpg"
+   },
+   {
+    "title": "App Development",
+    "category": "103 + Premeium flowchart Notes",
+    "actualPrice": 9,
+    "img_url": "https://i.postimg.cc/0yYLVdT4/a-captivating-and-modern-image-focusing-on-app-dev-TR82-Zk-h-Tba-D4-cpb-UOKe-Q-1brf-K8bh-Sl-KNl-Voj-Wd-DUfw.jpg"
+   },
+   {
+    "title": "Full Stack Development",
+    "category": "104 + Premeium flowchart Notes",
+    "actualPrice": 10,
+    "actualNK": "https://i.ibb.co/BB1vDdx/FULLSTACK-DEV.jpg",
+    "img_url": "https://i.postimg.cc/3Nv5Kjzg/a-visually-engaging-infographic-displaying-the-ful-DErgcp-Qm-TSWg-YXpiy8-CNx-Q-hg-Mwv-HR3-SYS5s-U6-LZVPs3-A.jpg"
+   },
+   {
+    "title": "Frontend Development",
+    "category": "105 + Premeium flowchart Notes",
+    "actualPrice": 12,
+    "actualNK": "https://i.ibb.co/rsKK8Dw/FRONTEND-DEV.jpg",
+    "img_url": "https://i.postimg.cc/hjfTtMgZ/a-stunning-sleek-image-highlighting-the-world-of-f-wu-O-Jds-Tey-X6yj-WAse-Rqw-x-BPFZHJg-Sbe-Q3-Qa-Z-cq-JMw.jpg"
+   },
+   {
+    "title": "Software Engineer",
+    "category": "106 + Premeium flowchart Notes",
+    "actualPrice": 12,
+    "img_url": "https://i.postimg.cc/j2S0Gwbb/a-sleek-and-modern-depiction-of-software-engineeri-fmbk7gxg-QDKIq52-DVi-Vsr-Q-Qfg-Wr-Kxc-TGSv4k-RVj-Ofg-Uw.jpg"
+   },
+   {
+    "title": "Media Notes",
+    "category": "107 + Premeium flowchart Notes",
+    "actualPrice": 9,
+    "img_url": "https://i.postimg.cc/kgrYS6pg/an-educational-and-visually-appealing-infographic-U0-Yp-SYg8-St-Gpw-MUqeh-CLZQ-u-NZqbe6r-Qea-Kv9vf-Zv-U7og.jpg"
+   },
+   {
+    "title": "AR / VR",
+    "category": "108 + Premeium flowchart Notes",
+    "actualPrice": 11,
+    "img_url": "https://i.postimg.cc/mgbXVfBv/a-cutting-edge-digital-illustration-of-a-futuristi-IPQDEbx-QQk-Ih-XJTKMTKKg-Fa-L5-WXle-Ta-6b-UK-MEj-h-Q.jpg"
+   },
+   {
+    "title": "UPSC",
+    "category": "109 + Premeium flowchart Notes",
+    "actualPrice": 9,
+    "img_url": "https://i.postimg.cc/m2TyWYJM/a-meticulously-designed-infographic-centered-aroun-7hml-Iuc-St-W0ld9-RCa9-WCQ-e-YDf19r-CQT2q-AEBg-Ia-K5-w.jpg"
+   },
+   {
+    "title": "CAT Exam",
+    "category": "110 + Premeium flowchart Notes",
+    "actualPrice": 11,
+    "img_url": "https://i.postimg.cc/zGbLs3zK/a-meticulously-designed-infographic-aimed-at-cat-e-Pl6c9m-GPSz-Cwm-Jqa-RNNrsw-8bu-Vn5-Xo-RRi-Ix-Erf-PYBUJQ.jpg"
+   },
+   {
+    "title": "CUET Entrance",
+    "category": "111 + Premeium flowchart Notes",
+    "actualPrice": 8,
+    "img_url": "https://i.postimg.cc/vHjTtMrB/a-meticulously-designed-educational-image-with-a-w-a-Qx-Cm71e-QEu4-Rf-QMQ-zrfw-ZZ5-MGP7n-TLOx9-FOwdb-M4yg.jpg"
+   },
+   {
+    "title": "Class 12th Physics",
+    "category": "112 + Premeium flowchart Notes",
+    "actualPrice": 13,
+    "img_url": "https://i.postimg.cc/Dzc7HKX1/an-educational-and-visually-appealing-infographic-s-W1-Kcyg-T-2-Qkiclp2-Tw-PQ-XUF0zj-Nv-Ra2-X9-B0o-Gs-Dl-JA.jpg"
+   },
+   {
+    "title": "Class 12th Biology",
+    "category": "113 + Premeium flowchart Notes",
+    "actualPrice": 10,
+    "img_url": "https://i.postimg.cc/fb5h5jGK/a-meticulously-designed-educational-infographic-fo-l-HKKOxk-TDqt-Y7nj-OLsi9-A-Iz-PBCub9-Rfm-CS1-U-HXVSJA.jpg"
+   },
+   {
+    "title": "Class 12th Chemistry",
+    "category": "114 + Premeium flowchart Notes",
+    "actualPrice": 11,
+    "img_url": "https://i.postimg.cc/xjN1jBDV/a-stunning-informative-scientific-image-centered-a-6-F1sg-Mt-KTMe8w-Whcmbr-VCQ-bya9-Bo-TV62t-HIjvll3-XQ.jpg"
+   },
+   {
+    "title": "Class 12th Maths",
+    "category": "115 + Premeium flowchart Notes",
+    "actualPrice": 12,
+    "img_url": "https://i.postimg.cc/5tjM7FfW/a-meticulously-designed-educational-image-centered-z8-HPU6-DRme-Y3vt2r-Ye-Lhw-q-K-ug-MMn-R7-K9rlr-OPH0ww-Q.jpg"
+   },
+   {
+    "title": "Class 12th Accounts",
+    "category": "116 + Premeium flowchart Notes",
+    "actualPrice": 8,
+    "img_url": "https://i.postimg.cc/5tjM7FfW/a-meticulously-designed-educational-image-centered-z8-HPU6-DRme-Y3vt2r-Ye-Lhw-q-K-ug-MMn-R7-K9rlr-OPH0ww-Q.jpg"
+   },
+   {
+    "title": "Class 12th Business",
+    "category": "117 + Premeium flowchart Notes",
+    "actualPrice": 11,
+    "img_url": "https://i.postimg.cc/6qWccCNd/a-visually-appealing-and-organized-image-focusing-ZIEMWx-QFTJ2yg-ORy1-JDqtg-pyj6-F5h7-SI-2-Pyi5-Xghuzw.jpg"
+   },
+   {
+    "title": "Class 12th Important Questions",
+    "category": "118 + Premeium flowchart Notes",
+    "actualPrice": 10,
+    "img_url": "https://i.postimg.cc/yx6mzBx9/a-visually-engaging-and-informative-infographic-de-o9-Kxvq-LQhisx-Sogt-Kc3mw-61r-SOO2s-RWy-X9j-SRCGHb-LA.jpg"
+   },
+   {
+    "title": "CUET 200+ Important Resources",
+    "category": "119 + Premeium flowchart Notes",
+    "actualPrice": 8,
+    "img_url": "https://i.postimg.cc/ZYFcCsh0/a-visually-appealing-and-organized-infographic-fea-PUSK6b-Ju-Tt-SVsw-R1y-V7-AGg-Iw-W5-Vqb-YSHK73-X2-Y-RPRKA.jpg"
+   }
+]
+
 
   export const software =
-    [
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-     
-      
+    [      
       {
        "category": "CUET 200+ Important Resources",
        "title": "119 + Premeium flowchart Notes",

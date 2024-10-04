@@ -23,7 +23,7 @@ export default function CareerTrack() {
       </div>
 
       <img
-        src="/career-track-image.jpg"
+        src="/caf-portal.jpg"
         alt="Career Track"
         className="w-full md:w-1/2 h-64 object-cover rounded-lg shadow-md"
       />

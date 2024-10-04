@@ -3,15 +3,14 @@ import { FaRedo, FaBriefcase, FaTicketAlt, FaGift, FaMedal, FaCertificate } from
 
 export default function GreenCardBenefits() {
   return (
-    <div className="bg-gray-100 py-16 px-5 md:px-20 min-h-screen flex items-center justify-center">
-      <div className="bg-white shadow-2xl rounded-xl flex flex-col md:flex-row overflow-hidden max-w-6xl w-full">
+    <div className="bg-white p-8 shadow-lg rounded-lg mx-auto mt-8 flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6">
         
         {/* Left Side: Image */}
-        <div className="w-full md:w-1/2 relative">
+        <div className="w-full md:w-1/2 relative flex items-center">
           <img
-            src="/path-to-your-image/green-card-benefits.jpg" // Replace with actual image path
+            src="/Green-card.jpg" // Replace with actual image path
             alt="Green Card Benefits"
-            className="object-cover h-full w-full"
+            className="object-cover h-3/4 w-full"
           />
         </div>
 
@@ -76,6 +75,5 @@ export default function GreenCardBenefits() {
           </div>
         </div>
       </div>
-    </div>
   );
 }

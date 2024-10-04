@@ -3,8 +3,8 @@ import { FaCertificate, FaQrcode, FaMedal, FaKey } from 'react-icons/fa';
 
 export default function UNSRCertificate() {
   return (
-    <div className="bg-gray-100 py-16 px-5 md:px-20 min-h-screen flex items-center justify-center">
-      <div className="bg-white shadow-2xl rounded-xl flex flex-col md:flex-row overflow-hidden max-w-6xl w-full">
+    <div className="bg-white p-8 shadow-lg rounded-lg mx-auto mt-8 flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-6">
+      {/* <div className="shadow-2xl rounded-xl flex flex-col md:flex-row overflow-hidden max-w-6xl w-full"> */}
         
         {/* Left Side: Content */}
         <div className="w-full md:w-1/2 p-8 md:p-12">
@@ -58,15 +58,15 @@ export default function UNSRCertificate() {
         </div>
 
         {/* Right Side: Image */}
-        <div className="w-full md:w-1/2 relative bg-gradient-to-b from-blue-100 to-blue-300">
+        <div className="w-full md:w-1/2 relative flex items-center">
           <img
-            src="/path-to-your-image/certificate.png" 
+            src="/certificate.jpg" 
             alt="UNSR Certificate"
-            className="object-cover h-full w-full rounded-r-xl"
+            className="object-cover h-4/5 w-full rounded-xl"
           />
-          <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-t from-blue-600 to-transparent opacity-70"></div>
+          <div className="absolute top-0 left-0 right-0 bottom-0  to-transparent opacity-70"></div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 }

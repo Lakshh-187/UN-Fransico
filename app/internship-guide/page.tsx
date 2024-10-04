@@ -26,8 +26,8 @@ import { motion } from "framer-motion";
 
 const internshipSteps = [
   {
-    title: "1. Internship Application Process",
-    image: "/images/internship1.jpg",
+    title: "Internship Application Process",
+    image: "https://i.ibb.co/4dQB6R0/a-sleek-design-with-two-calendars-marked-winter-an-Yg-Kii-Mom-Tc-3f-B7-SWv-YT5-Q-HZc-Ynwej-RRSLTE9-F.jpg",
     alt: "Internship Application Process",
     icon: <FaBriefcase className="text-blue-500 w-6 h-6" />,
     content: [
@@ -56,8 +56,8 @@ const internshipSteps = [
     ],
   },
   {
-    title: "2. Common Application Form (CAF)",
-    image: "/images/internship2.jpg",
+    title: "Common Application Form (CAF)",
+    image: "https://i.ibb.co/dmdRpKT/a-digital-illustration-of-a-student-filling-out-a-Gj9e-A9v6-S36umhu-TINJl-Lg-r-J3-MTWLj-Tum-A-2nem-I.jpg",
     alt: "Common Application Form",
     icon: <FaFileContract className="text-green-500 w-6 h-6" />,
     content: [
@@ -95,8 +95,8 @@ const internshipSteps = [
     ],
   },
   {
-    title: "3. Advanced Super Application Form (ASAF)",
-    image: "/images/internship3.jpg",
+    title: "Advanced Super Application Form (ASAF)",
+    image: "https://i.ibb.co/RjqRxBd/a-modern-sleek-design-of-a-highly-experienced-scho-zzhj-IA98-Q86exk8e-JFg-IIw-Dy-DUl-tr-SIGXU-d-Yw7q.jpg",
     alt: "Advanced Super Application Form",
     icon: <FaRocket className="text-yellow-500 w-6 h-6" />,
     content: [
@@ -116,8 +116,8 @@ const internshipSteps = [
     ],
   },
   {
-    title: "4. Uniford Special Internship Program (UNSIP)",
-    image: "/images/internship4.jpg",
+    title: "Uniford Special Internship Program (UNSIP)",
+    image: "https://i.ibb.co/wCgM95T/a-positive-and-supportive-design-showing-a-fresher-ag-NVr-VPt-QFO-Mn-Imc-G-6r-A-ua-Dj6iv-Tw-OIYBnfka.jpg",
     alt: "Uniford Special Internship Program",
     icon: <FaStar className="text-purple-500 w-6 h-6" />,
     content: [
@@ -146,8 +146,8 @@ const internshipSteps = [
     ],
   },
   {
-    title: "5. Green Card Benefits",
-    image: "/images/internship5.jpg",
+    title: "Green Card Benefits",
+    image: "/internship-guide/image-3.jpg",
     alt: "Green Card Benefits",
     icon: <FaAward className="text-red-500 w-6 h-6" />,
     content: [
@@ -184,50 +184,32 @@ const internshipSteps = [
     ],
   },
   {
-    title: "6. Internship Challenges for Freshers & Solutions",
-    image: "/images/internship6.jpg",
+    title: "Internship Challenges & Solutions",
+    image: "/internship-guide/image-1.jpg",
     alt: "Internship Challenges",
     icon: <FaBullhorn className="text-pink-500 w-6 h-6" />,
     content: [
       {
-        heading: "Problem:",
+        heading: "Challenges:",
         details: [
-          {
-            text: "Lack of Genuine Internships: Many freshers struggle to find real internships and must apply to multiple companies manually.",
-            icon: <FaTimesCircle className="text-pink-500 w-5 h-5 mr-2" />,
-          },
-          {
-            text: "High Rejection Rates: Around 99% of freshers face rejection due to a lack of experience.",
-            icon: <FaTimesCircle className="text-pink-500 w-5 h-5 mr-2" />,
-          },
-          {
-            text: "Paid Internships Disguised as Training: Some companies charge fees for “training programs” instead of providing true internship opportunities.",
-            icon: <FaTimesCircle className="text-pink-500 w-5 h-5 mr-2" />,
-          },
+          { text: "Few genuine internships; multiple manual applications.", icon: <FaTimesCircle className="text-pink-500 w-5 h-5 mr-2" /> },
+          { text: "High rejection rates for freshers.", icon: <FaTimesCircle className="text-pink-500 w-5 h-5 mr-2" /> },
+          { text: "Training programs disguised as internships.", icon: <FaTimesCircle className="text-pink-500 w-5 h-5 mr-2" /> },
         ],
       },
       {
-        heading: "Solution:",
+        heading: "Solutions:",
         details: [
-          {
-            text: "CAF – Simplified Application Process: Freshers can fill out one CAF to reach several companies through Uniford’s Talent Hunt Alliance.",
-            icon: <FaLightbulb className="text-pink-500 w-5 h-5 mr-2" />,
-          },
-          {
-            text: "Guaranteed Free Internships: If no suitable internships are available or if companies charge fees, Uniford guarantees free internships through UNSIP and partner companies.",
-            icon: <FaCheckCircle className="text-pink-500 w-5 h-5 mr-2" />,
-          },
-          {
-            text: "Advanced Opportunities: Scholars who complete two basic internships with UN-Francisco and perform well will be listed on Uniwave’s Get Hired portal, offering more paid or stipend-based opportunities.",
-            icon: <FaRocket className="text-pink-500 w-5 h-5 mr-2" />,
-          },
+          { text: "CAF for easy application across companies.", icon: <FaLightbulb className="text-pink-500 w-5 h-5 mr-2" /> },
+          { text: "Guaranteed free internships through UNSIP.", icon: <FaCheckCircle className="text-pink-500 w-5 h-5 mr-2" /> },
+          { text: "Advanced opportunities via Uniwave's Get Hired portal.", icon: <FaRocket className="text-pink-500 w-5 h-5 mr-2" /> },
         ],
       },
     ],
-  },
+  }, 
   {
-    title: "7. 🎓 Scholar Categories",
-    image: "/images/internship7.jpg",
+    title: "Scholar Categories",
+    image: "/internship-guide/image-2.jpg",
     alt: "Scholar Categories",
     icon: <FaGraduationCap className="text-indigo-500 w-6 h-6" />,
     content: [
@@ -266,9 +248,15 @@ export default function InternshipGuide() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex flex-col items-center">
-          <h1 className="text-3xl font-bold text-gray-900">
-            UN-Francisco <span className="text-blue-600">Internship Guide</span>
+        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 flex flex-col ">
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">
+          Welcome to the <span className="text-blue-600">UN-Francisco Internship Guide</span>
+          </h1>
+          <h1 className="text-base font-normal text-gray-900 mb-3">
+          Helping scholars like YOU unlock endless internship opportunities!
+          </h1>
+          <h1 className="text-base font-normal text-gray-900">
+          At UN-Francisco, we understand the challenges faced by students in securing valuable internships. That's why we've created a unique, streamlined process that connects you with top companies and helps you stand out. Let’s explore how our different programs and tools can help you land your dream internship.
           </h1>
         </div>
       </header>
@@ -290,7 +278,7 @@ export default function InternshipGuide() {
                   alt={step.alt}
                   width={500}
                   height={300}
-                  className="object-cover w-full h-full"
+                  className="object-fill w-full h-full"
                   loading="lazy"
                 />
               </div>
@@ -343,15 +331,6 @@ export default function InternshipGuide() {
           </motion.section>
         ))}
       </main>
-
-      <footer className="bg-white shadow mt-auto">
-        <div className="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8">
-          <p className="text-center text-gray-600">
-            &copy; {new Date().getFullYear()} UN-Francisco Scholar Program. All
-            rights reserved.
-          </p>
-        </div>
-      </footer>
     </div>
   );
 }

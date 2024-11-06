@@ -37,6 +37,7 @@ function Footer() {
         { label: "Disclaimer", link: "/about" },
         { label: "Benefits", link: "/benefits" },
         { label: "Id card", link: "/Id-card" },
+        { label: "Uniford Info", link: "/about-feature" },
       ],
     },
     {

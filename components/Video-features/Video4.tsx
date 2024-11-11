@@ -3,9 +3,9 @@ import { AiOutlinePlayCircle } from 'react-icons/ai';
 
 const VideoSection4 = () => {
   return (
-    <section className="flex flex-col md:flex-row-reverse items-center bg-lime-200 p-8 md:py-12 min-h-fit">
+    <section className="flex flex-col md:flex-row-reverse items-center bg-blue-200 p-8 md:py-12 h-[400px]">
       {/* Left Text Section */}
-      <div className="md:w-1/2 p-6 bg-lime-100 text-lime-900 rounded-lg shadow-md">
+      <div className="md:w-1/2 p-6 bg-blue-100 text-lime-900 rounded-lg shadow-md">
         <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-4">
           Built by <span className="italic font-serif">pedigreed & experienced leaders</span>
         </h2>

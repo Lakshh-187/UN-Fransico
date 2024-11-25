@@ -12,6 +12,7 @@ import { RefsContext } from "./layout";
 import HeroMain from "@/components/uniford-main/HeroMain";
 import BecomeAUnifordScholar from "@/components/uniford-main/BecomeAUnifordScholar";
 import FAQ from "@/components/uniford-main/FAQ";
+import Comp from "@/components/uniford-main/Component";
 
 const Home = () => {
   const { global_pre, who_are_we, get_involved, apply } = useContext(RefsContext);
@@ -77,6 +78,11 @@ const Home = () => {
       <div>
         <HeroSection />
       </div>
+
+      <div>
+        <Comp />
+      </div>
+      
       <div>
         <GrowUp />
       </div>

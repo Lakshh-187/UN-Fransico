@@ -19,11 +19,6 @@ import Tool from "@/components/tools/Tool";
 import PopularPostsCarousel from "@/components/grant-program/GrantProgramsCardsCarousel";
 
 export default function Home() {
-    const [applicationClosed, setApplicationClosed] = useState(false);
-
-  const handleApplyClick = () => {
-    setApplicationClosed(true);
-  };
   
     const [trendingDomains] = useState([
         "Engineering",
@@ -279,20 +274,13 @@ export default function Home() {
                                 <p>Pro Resources</p>
                             </div>
                         </div>
-                        {applicationClosed ? (
-            <button
-            className="bg-gray-400 whitespace-nowrap my-4 w-3/5 lg:w-2/5 h-12 rounded-xl text-red-600 text-lg font-bold flex items-center"
-          >
-            <FaTimes className='mx-3' /> Application Closed
-          </button>
-          ) : (
+            <Link href="https://www.uniwave.in/getHired">
             <button
               className="bg-[#28487c] whitespace-nowrap my-4 w-3/5 lg:w-2/5 h-12 rounded-xl text-white text-lg font-bold"
-              onClick={handleApplyClick}
             >
               Apply Now
             </button>
-          )}
+            </Link>
                     </div>
                 </div>
             </div>

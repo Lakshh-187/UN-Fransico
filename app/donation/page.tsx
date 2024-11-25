@@ -178,11 +178,11 @@ const Layout = () => {
             </button>
         </Link>
 
-        <Link href="https://forms.gle/MUhJznejqeztS3KR6">
+        <Link href="https://forms.gle/sMu8FyNMb4YeLZeMA">
             <button
                 className="bg-green-600 text-white py-3 px-6 text-lg font-bold rounded-3xl hover:bg-green-700 flex items-center justify-center shadow-lg transform transition-transform hover:scale-105 w-full"
             >
-                <FaPiggyBank className="mr-2" /> Financial Aid
+                <FaPiggyBank className="mr-2" /> Scholar Application
             </button>
         </Link>
     </div>

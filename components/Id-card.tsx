@@ -5,9 +5,9 @@ const ScholarIDCard = () => {
   return (
     <div className="flex flex-col md:flex-row items-center justify-center md:items-start bg-white shadow-lg rounded-lg p-6 md:p-10 space-y-6 md:space-y-0 md:space-x-10">
       {/* Left Side: Image */}
-      <div className="md:w-1/3 w-full flex justify-center items-center">
+      <div className="md:w-1/3 w-full flex justify-center items-center md:mt-10">
         <Image
-          src="/id-card.jpg" // Add your image path here
+          src="/Id-card/image-0.jpg" // Add your image path here
           alt="Scholar ID Card"
           width={250}
           height={1000}

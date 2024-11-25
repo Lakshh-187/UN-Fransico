@@ -18,23 +18,20 @@ import SocialWorkUpload from '@/components/SocialWorkUpload'
 
 function Page() {
   const isMember = useSelector((state) => state.user.userData.isMember);
-  const [category, setCategory] = useState('Software')
+  const [category, setCategory] = useState('courses')
 
   const [activeCategory, setActiveCategory] = useState('0')
   const [categoryData, setCategoryData] = useState([])
 
   const [loading, setLoading] = useState(false);
   useEffect(() => {
-    updateCategoryData('Software')
+    updateCategoryData('courses')
   }, [])
 
   const updateCategoryData = async (selectedCategory) => {
     let data = []
     setLoading(true);
     switch (selectedCategory.toLowerCase()) {
-      case 'software':
-        data = await fetchCollection('Software-Resources');
-        break;
 
       case 'courses':
         data = await fetchCollection('courses-resources');
@@ -87,15 +84,6 @@ function Page() {
     <>
       {loading && <Loading/>}
       <ul className='flex flex-wrap justify-center p-5 text-center mb-10'>
-        <li 
-          onClick={changeCategory} 
-          id='0' 
-          className={`px-4 py-2 mx-2 rounded-lg cursor-pointer transition-transform duration-300 ease-in-out ${
-            activeCategory === '0' ? 'bg-green-200 text-green-800 shadow-lg' : 'bg-white text-gray-600 shadow-md hover:bg-green-300 hover:text-green-900'
-          }`}
-        >
-          Software
-        </li>
 
         <li 
           onClick={changeCategory} 
